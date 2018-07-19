@@ -1,0 +1,245 @@
+
+
+body {
+    background-color: #e1dce2;
+}
+
+.heading {
+    font-family: monospace;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+#heading.blackText {
+    color: black
+}
+
+#board {
+    margin-top: 20px;  
+    margin-left: 350px;  
+    position: relative;
+    z-index: 100;
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.moreWhite {
+    background-color: white;
+}
+
+.white {
+    background-color: #c8b27a;
+}
+
+.moreBlack {
+    background-color: #4c4747;
+}
+
+.blackText{
+    color: black
+}
+
+.black {
+    background-color: #6c3122;
+}
+
+.wking {
+    width: 46px;
+    height: 44px;
+    background: url(chess.png) 0 0;
+}
+
+.player {
+    margin-left: 18%;
+}
+
+.cell.selected {
+    background-color: pink;
+}
+
+.cell.warning {
+    background-color: #d46262;
+}
+
+.css-sprite-wking
+{
+background:url('css-sprite-combined.png.png') 0px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-bking
+{
+background:url('css-sprite-combined.png.png') -45px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-wqueen
+{
+background:url('css-sprite-combined.png.png') -90px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-bqueen
+{
+background:url('css-sprite-combined.png.png') -135px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-wrook
+{
+background:url('css-sprite-combined.png.png') -180px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-brook
+{
+background:url('css-sprite-combined.png.png') -225px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-wbishop
+{
+background:url('css-sprite-combined.png.png') -270px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-bbishop
+{
+background:url('css-sprite-combined.png.png') -315px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-wknight
+{
+background:url('css-sprite-combined.png.png') -360px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-bknight
+{
+background:url('css-sprite-combined.png.png') -405px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-wpawn
+{
+background:url('css-sprite-combined.png.png') -450px -0px;
+width:45px;height:45px;
+}
+
+.css-sprite-bpawn
+{
+background:url('css-sprite-combined.png.png') -495px -0px;
+width:45px;height:45px;
+}
+/* Wooden Wall [CSS] */
+/* Made with ♥ by Louis Bullock */
+
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+	display:block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Wood Gradient Overlay Shadows and Highlights */
+/* html:before {
+    background-image:
+    -webkit-radial-gradient(rgba(213,173,105,0.15) 50%,transparent),
+    radial-gradient(transparent,rgba(124,9,5, 0.1) 70%),
+    radial-gradient(transparent 60%,rgba(124,9,5, 0.09) 90%),
+    radial-gradient(transparent 80%,rgba(124,9,5, 0.07) 97%);
+    
+    -webkit-box-shadow:
+    inset 0 -10px 1000px 90px rgba(168,99,60,0.1),
+    inset 0 -10px 100px 70px rgba(74,2,2,0.1),
+    inset 0 -10px 100px 50px rgba(74,2,2,0.05),
+    inset 0 -100px 1000px 70px rgba(74,2,2,0.06);
+  
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+
+    -webkit-background-size: 100%;
+
+    display: block;
+    content: "";
+} */
+
+/* This is just some subtle noise I put together. Well actually it's not noise per se, more of a subtle pattern to diffuse the background */
+/* I think it's only visible in Safari, but ah well */
+/* html:after {
+    background-image:
+    -webkit-linear-gradient(45deg, rgba(0,0,0,0.0125) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.0125) 75%, rgba(0,0,0,0.0125)),
+    -webkit-linear-gradient(45deg, rgba(0,0,0,0.0125) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.0125) 75%, rgba(0,0,0,0.0125));
+  
+    -webkit-background-size: 2px 2px;
+
+    background-position: 0 0, 1px 1px;
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index:5;
+    position: absolute;
+} */
+
+/* Wood Base Gradient */
+body {
+    background-image: -webkit-radial-gradient(#D1A46B,#B57744);
+
+    -webkit-background-size: 100%;
+
+}
+
+/* Wood Grain */
+body:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+
+    background-image:
+    -webkit-linear-gradient(0, rgba(255,255,255,.014) 50%, transparent 50%),
+    -webkit-linear-gradient(0, rgba(255,255,255,.015) 50%, transparent 50%),
+    -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.02) 50%),
+    -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.02) 50%);
+
+    -webkit-background-size: 13px, 29px, 37px, 53px;
+
+}
+
+/* Wood Panels */
+body:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+
+    background-image:
+    -webkit-linear-gradient(0,transparent 97%, rgba(214, 171, 119, 0.5) 97%),
+    -webkit-linear-gradient(0,transparent 93%, rgba(173, 97, 54, 0.45) 93%),
+    -webkit-linear-gradient(0,transparent 97%, rgba(214, 171, 119, 0.9) 97%);
+  
+    -webkit-background-size: 40px;
+}
