@@ -11,20 +11,34 @@ body {
     color: white;
 }
 
+.timer {
+    font-family: monospace;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
 #heading.blackText {
     color: black
 }
 
+#subHeading {
+    font-size: 20px;
+    margin-left: 325px;
+    position: relative;
+    z-index: 400;
+}
+
 #board {
     margin-top: 20px;  
-    margin-left: 350px;  
+    margin-left: 375px;  
     position: relative;
     z-index: 100;
 }
 
 .cell {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     display: table-cell;
     vertical-align: middle;
     border: 1px solid black;
